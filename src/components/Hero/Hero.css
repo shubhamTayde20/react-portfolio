@@ -1,0 +1,324 @@
+.hero {
+  min-height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+
+  padding: 6rem 0;
+
+  background: #f8fafc;
+}
+
+.hero-container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 5rem;
+}
+
+
+/* Content */
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-intro {
+  margin: 0 0 1rem;
+
+  color: #2563eb;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  letter-spacing: 0.05em;
+}
+
+.hero h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: clamp(3rem, 6vw, 5.5rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.hero h1 span {
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color: #6b7280;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin: 2rem 0;
+
+  color: #6b7280;
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.8rem;
+}
+
+.hero-buttons a {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  padding: 0.9rem 1.3rem;
+
+  border-radius: 0.5rem;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.hero-primary-button {
+  background: #111827;
+
+  color: #ffffff;
+}
+
+.hero-primary-button:hover {
+  background: #2563eb;
+
+  transform: translateY(-2px);
+}
+
+.hero-secondary-button {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #111827;
+}
+
+.hero-secondary-button:hover {
+  border-color: #111827;
+
+  transform: translateY(-2px);
+}
+
+
+/* Social links */
+
+.hero-socials {
+  display: flex;
+
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+.hero-socials a {
+  color: #6b7280;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.hero-socials a:hover {
+  color: #2563eb;
+}
+
+
+/* =========================
+   Code Card
+========================= */
+
+.hero-visual {
+  display: flex;
+
+  justify-content: center;
+}
+
+.hero-card {
+  width: 100%;
+  max-width: 480px;
+
+  overflow: hidden;
+
+  background: #111827;
+
+  border-radius: 1rem;
+
+  box-shadow:
+    0 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.hero-card-top {
+  display: flex;
+
+  gap: 0.4rem;
+
+  padding: 1rem;
+
+  border-bottom: 1px solid #1f2937;
+}
+
+.hero-card-top span {
+  width: 0.7rem;
+  height: 0.7rem;
+
+  border-radius: 50%;
+
+  background: #4b5563;
+}
+
+.hero-code {
+  padding: 2rem;
+
+  overflow-x: auto;
+}
+
+.hero-code p {
+  margin: 0 0 0.7rem;
+
+  color: #d1d5db;
+
+  font-family: monospace;
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  white-space: nowrap;
+}
+
+.code-purple {
+  color: #c084fc;
+}
+
+.code-green {
+  color: #86efac;
+}
+
+.code-blue {
+  color: #60a5fa;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 5rem 0;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 4rem;
+  }
+
+  .hero-content {
+    max-width: 800px;
+
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+  .hero-buttons,
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: auto;
+
+    padding: 4rem 0;
+  }
+
+  .hero-container {
+    width: 88%;
+
+    gap: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
+  .hero-socials {
+    gap: 1rem;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+
+  .hero-code {
+    padding: 1.3rem;
+  }
+
+  .hero-code p {
+    font-size: 0.75rem;
+  }
+
+}

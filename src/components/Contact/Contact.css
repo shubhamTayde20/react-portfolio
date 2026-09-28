@@ -1,0 +1,355 @@
+.contact {
+  padding: 7rem 0;
+  background: #111827;
+  color: #ffffff;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Heading */
+
+.contact-heading {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.contact-heading p {
+  margin: 0 0 0.6rem;
+
+  color: #60a5fa;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-heading h2 {
+  margin: 0 0 1rem;
+
+  color: #ffffff;
+
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.contact-heading span {
+  display: block;
+
+  color: #9ca3af;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* Content */
+
+.contact-content {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+/* Contact info */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 3rem;
+  height: 3rem;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.6rem;
+
+  background: #1f2937;
+
+  color: #60a5fa;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-item span {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  color: #9ca3af;
+
+  font-size: 0.8rem;
+}
+
+.contact-item a,
+.contact-item strong {
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  text-decoration: none;
+
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  color: #60a5fa;
+}
+
+
+/* Form */
+
+.contact-form {
+  padding: 2rem;
+
+  background: #ffffff;
+
+  border-radius: 1rem;
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  color: #374151;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 0.85rem 1rem;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 0.5rem;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 0.9rem;
+
+  resize: vertical;
+
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+/* Button */
+
+.contact-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.6rem;
+
+  padding: 0.9rem 1rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #2563eb;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  padding: 2.5rem 0 1.5rem;
+
+  background: #0b1120;
+
+  color: #ffffff;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-logo span {
+  color: #2563eb;
+}
+
+.footer-container > p {
+  margin: 0.6rem 0 1.5rem;
+
+  color: #9ca3af;
+
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  color: #d1d5db;
+
+  font-size: 0.85rem;
+
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+
+  border-top: 1px solid #1f2937;
+
+  color: #6b7280;
+
+  font-size: 0.75rem;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 5rem 0;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+  }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .contact-container {
+    width: 88%;
+  }
+
+  .contact-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-content {
+    gap: 2.5rem;
+  }
+
+  .contact-form {
+    padding: 1.3rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
