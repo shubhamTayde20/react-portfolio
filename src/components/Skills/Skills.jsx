@@ -1,18 +1,51 @@
+
 import "./Skills.css";
 
 function Skills() {
   const skills = [
     {
       title: "Frontend",
-      skills: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Tailwind CSS"],
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "jQuery",
+      ],
     },
     {
-      title: "Backend",
-      skills: ["Node.js", "Express.js", "MongoDB", "Mongoose", "REST API"],
+      title: "UI & Libraries",
+      skills: [
+        "Bootstrap",
+        "Tailwind CSS",
+        "React-Bootstrap",
+        "Ant Design",
+        "GSAP",
+        "Swiper",
+      ],
     },
     {
-      title: "Tools & Others",
-      skills: ["Git", "GitHub", "VS Code", "MySQL", "Power BI", "Figma"],
+      title: "Backend & Database",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "REST API",
+        "MySQL",
+      ],
+    },
+    {
+      title: "Tools & AI",
+      skills: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Cursor",
+        "MongoDB Atlas",
+        "Postman",
+        "Figma",
+      ],
     },
   ];
 
@@ -22,10 +55,12 @@ function Skills() {
 
         <div className="section-heading">
           <p>MY EXPERTISE</p>
+
           <h2>Skills & Technologies</h2>
+
           <span>
-            Technologies and tools I use to build modern, responsive and
-            user-friendly web applications.
+            Technologies, frameworks and development tools I use to build
+            modern, responsive and user-friendly web applications.
           </span>
         </div>
 
@@ -35,7 +70,7 @@ function Skills() {
 
               <div className="skill-card-header">
                 <span className="skill-number">
-                  0{index + 1}
+                  {String(index + 1).padStart(2, "0")}
                 </span>
 
                 <h3>{category.title}</h3>
@@ -43,7 +78,10 @@ function Skills() {
 
               <div className="skill-list">
                 {category.skills.map((skill, skillIndex) => (
-                  <span className="skill-tag" key={skillIndex}>
+                  <span
+                    className="skill-tag"
+                    key={skillIndex}
+                  >
                     {skill}
                   </span>
                 ))}
@@ -59,3 +97,4 @@ function Skills() {
 }
 
 export default Skills;
+
